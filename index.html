@@ -13,11 +13,12 @@
     <script src="bower_components/onsenui/js/angular-onsenui.min.js"></script>
 
     <script src="js/app.js"></script>
+    <script src="js/angularDragAndDropList.js"></script>
 
     <link rel="stylesheet" href="bower_components/onsenui/css/onsenui.css">
     <link rel="stylesheet" href="bower_components/onsenui/css/onsen-css-components.css">
 
-    <link rel="stylesheet" href="angular-drag-and-drop-lists.css">
+    <link rel="stylesheet" href="css/angular-drag-and-drop-lists.css">
 
 </head>
 
@@ -29,7 +30,7 @@
 
    <ons-page>
         <ons-list>
-          <ons-list-item ng-click="load('angular-drag-and-drop-lists.html')" tappable>
+          <ons-list-item ng-click="load('html/angular-drag-and-drop-lists.html')" tappable>
             <i class="fa fa-info-circle fa-lg" style="color: #666"></i> &nbsp; Test1 
           </ons-list-item>
         </ons-list>
@@ -37,7 +38,7 @@
 
   </ons-splitter-side>
 
-   <ons-splitter-content var="mySplitterContent" page="angular-drag-and-drop-lists.html"></ons-splitter-content>
+   <ons-splitter-content var="mySplitterContent" page="html/angular-drag-and-drop-lists.html"></ons-splitter-content>
 
 </ons-splitter>
 
