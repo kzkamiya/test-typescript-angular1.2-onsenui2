@@ -1,0 +1,24 @@
+{
+  "name": "test-typescript-angular-scroll",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "cmtest080@gmail.com <cmtest080@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.26",
+    "angular-scroll": "~1.0.0",
+    "onsenui": "2.0.0-rc.17",
+    "angular-drag-and-drop-lists": "^1.4.0"
+  }
+}
