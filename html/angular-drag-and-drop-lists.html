@@ -6,18 +6,18 @@
       </ons-toolbar-button>
     </div>
     <div class="center">
-      Main Page
+      Angular Drag and Drop List
     </div>
   </ons-toolbar>
   
-  angular-drag-and-drop-lists
+    angular-drag-and-drop-lists
   
-  <span ng-repeat="item in models.lists.A">
+    <span ng-repeat="item in models.lists.A">
         {{item.label}}
     </span>
   
-<div class="simpleDemo row">
-    <div class="col-md-8">
+    <div class="simpleDemo row">
+      <div class="col-md-8">
         <div class="row">
             <div ng-repeat="(listName, list) in models.lists" class="col-md-6">
                 <div class="panel panel-info">
@@ -25,23 +25,24 @@
                         <h3 class="panel-title">List {{listName}}</h3>
                     </div>
                     <div class="panel-body">
-<ul dnd-list="list">
-    <li ng-repeat="item in list"
-        dnd-draggable="item"
-        dnd-moved="list.splice($index, 1)"
-        dnd-effect-allowed="move"
-        dnd-selected="models.selected = item"
-        ng-class="{'selected': models.selected === item}"
-        >
-        {{item.label}}
-    </li>
-</ul>
-</div>
+                        <ul dnd-list="list">
+                            <li ng-repeat="item in list"
+                                dnd-draggable="item"
+                                dnd-moved="list.splice($index, 1)"
+                                dnd-effect-allowed="move"
+                                dnd-selected="models.selected = item"
+                                ng-class="{'selected': models.selected === item}"
+                                >
+                                {{item.label}}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <div view-source="simple"></div>
     </div>
+
     <div class="col-md-4">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -52,8 +53,6 @@
             </div>
         </div>
     </div>
-</div>
-
 
 </ons-page>
 

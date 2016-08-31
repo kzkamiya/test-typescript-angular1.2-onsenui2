@@ -20,14 +20,6 @@ app.controller('AngularDragAndDropListController', ['$scope',
         $scope.modelAsJson = angular.toJson(model, true);
     }, true);
 
-
-    $scope.openOrClose = function() {
-      if ($scope.mySplitterSide.mode == 'split') {
-          $scope.mySplitterSide.close();
-      } else {
-          $scope.mySplitterSide.open();
-      }
-    }
 }]);
 
 
